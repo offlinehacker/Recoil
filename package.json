@@ -16,7 +16,7 @@
   "repository": "https://github.com/facebookexperimental/Recoil.git",
   "license": "MIT",
   "scripts": {
-    "prepare": "install-peers",
+    "prepare": "install-peers && npm run build",
     "build": "rollup -c && node scripts/postbuild.js",
     "test": "jest packages/*",
     "format": "prettier --write \"./**/*.{js,md,json}\"",
